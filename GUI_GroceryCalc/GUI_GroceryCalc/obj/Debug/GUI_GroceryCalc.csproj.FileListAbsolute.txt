@@ -1,0 +1,11 @@
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\bin\Debug\GUI_GroceryCalc.exe.config
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\bin\Debug\GUI_GroceryCalc.exe
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\bin\Debug\GUI_GroceryCalc.pdb
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.csproj.AssemblyReference.cache
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.Properties.Resources.resources
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.csproj.GenerateResource.cache
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.csproj.CoreCompileInputs.cache
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.exe
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.pdb
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.GroceryCalcForm.resources
+C:\Users\basal\source\repos\GUI_GroceryCalc\GUI_GroceryCalc\obj\Debug\GUI_GroceryCalc.Calculationsform.resources
