@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.AssemblyInfo.cs
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\bin\Debug\net8.0-windows\GroceryStore.exe
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\bin\Debug\net8.0-windows\GroceryStore.deps.json
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\bin\Debug\net8.0-windows\GroceryStore.runtimeconfig.json
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\bin\Debug\net8.0-windows\GroceryStore.dll
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\bin\Debug\net8.0-windows\GroceryStore.pdb
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.dll
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\refint\GroceryStore.dll
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.pdb
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.genruntimeconfig.cache
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\ref\GroceryStore.dll
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.GroceryDeALkanse.resources
+C:\Users\Admin\Documents\GUI\GroceryStore\GroceryStore\obj\Debug\net8.0-windows\GroceryStore.sourcelink.json
