@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\bin\Debug\net8.0-windows\GroceryApp.exe
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\bin\Debug\net8.0-windows\GroceryApp.deps.json
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\bin\Debug\net8.0-windows\GroceryApp.runtimeconfig.json
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\bin\Debug\net8.0-windows\GroceryApp.dll
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\bin\Debug\net8.0-windows\GroceryApp.pdb
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.Form1.resources
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.AssemblyInfo.cs
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.dll
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\refint\GroceryApp.dll
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.pdb
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.genruntimeconfig.cache
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\ref\GroceryApp.dll
+C:\Users\Admin\Documents\APPSDEV\GroceryApp\GroceryApp\obj\Debug\net8.0-windows\GroceryApp.Properties.Resources.resources
