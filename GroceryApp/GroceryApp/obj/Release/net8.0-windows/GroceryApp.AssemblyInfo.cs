@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroceryApp")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd8fa149498befdd2eed939ff05654e2467999fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b31e7d6eb81b283d8b5a39a1eeb3b198d9b3d7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroceryApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroceryApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
