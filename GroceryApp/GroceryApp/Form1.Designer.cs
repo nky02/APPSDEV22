@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             itemLabel = new Label();
             quantityLabel = new Label();
@@ -57,7 +57,7 @@
             totalCostLabel = new Label();
             checkOutButton = new Button();
             exitButton = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            Date = new DateTimePicker();
             fillUpPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
@@ -68,9 +68,10 @@
             // 
             itemLabel.AutoSize = true;
             itemLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            itemLabel.Location = new Point(35, 52);
+            itemLabel.Location = new Point(24, 31);
+            itemLabel.Margin = new Padding(2, 0, 2, 0);
             itemLabel.Name = "itemLabel";
-            itemLabel.Size = new Size(119, 25);
+            itemLabel.Size = new Size(75, 15);
             itemLabel.TabIndex = 0;
             itemLabel.Text = "ITEM LABEL:";
             itemLabel.Click += itemLabel_Click;
@@ -80,9 +81,10 @@
             quantityLabel.AutoSize = true;
             quantityLabel.FlatStyle = FlatStyle.Popup;
             quantityLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            quantityLabel.Location = new Point(44, 109);
+            quantityLabel.Location = new Point(31, 65);
+            quantityLabel.Margin = new Padding(2, 0, 2, 0);
             quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new Size(110, 25);
+            quantityLabel.Size = new Size(70, 15);
             quantityLabel.TabIndex = 1;
             quantityLabel.Text = "QUANTITY:";
             // 
@@ -90,9 +92,10 @@
             // 
             pricePerUnitLabel.AutoSize = true;
             pricePerUnitLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            pricePerUnitLabel.Location = new Point(0, 166);
+            pricePerUnitLabel.Location = new Point(0, 100);
+            pricePerUnitLabel.Margin = new Padding(2, 0, 2, 0);
             pricePerUnitLabel.Name = "pricePerUnitLabel";
-            pricePerUnitLabel.Size = new Size(154, 25);
+            pricePerUnitLabel.Size = new Size(98, 15);
             pricePerUnitLabel.TabIndex = 2;
             pricePerUnitLabel.Text = "PRICE PER UNIT:";
             // 
@@ -107,51 +110,57 @@
             fillUpPanel.Controls.Add(pricePerUnitLabel);
             fillUpPanel.Controls.Add(quantityLabel);
             fillUpPanel.Controls.Add(itemLabel);
-            fillUpPanel.Location = new Point(34, 204);
+            fillUpPanel.Location = new Point(24, 122);
+            fillUpPanel.Margin = new Padding(2, 2, 2, 2);
             fillUpPanel.Name = "fillUpPanel";
-            fillUpPanel.Size = new Size(397, 275);
+            fillUpPanel.Size = new Size(278, 165);
             fillUpPanel.TabIndex = 3;
             // 
             // groceryName
             // 
             groceryName.AutoSize = true;
             groceryName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groceryName.Location = new Point(68, 9);
+            groceryName.Location = new Point(48, 5);
+            groceryName.Margin = new Padding(2, 0, 2, 0);
             groceryName.Name = "groceryName";
-            groceryName.Size = new Size(224, 25);
+            groceryName.Size = new Size(143, 15);
             groceryName.TabIndex = 7;
             groceryName.Text = "TINDAHAN DE ALKANSE";
             // 
             // pricePerUnitTextBox
             // 
-            pricePerUnitTextBox.Location = new Point(171, 163);
+            pricePerUnitTextBox.Location = new Point(120, 98);
+            pricePerUnitTextBox.Margin = new Padding(2, 2, 2, 2);
             pricePerUnitTextBox.Name = "pricePerUnitTextBox";
-            pricePerUnitTextBox.Size = new Size(121, 31);
+            pricePerUnitTextBox.Size = new Size(86, 23);
             pricePerUnitTextBox.TabIndex = 6;
             pricePerUnitTextBox.TextChanged += pricePerUnitTextBox_TextChanged;
             // 
             // quantityTextBox
             // 
-            quantityTextBox.Location = new Point(171, 106);
+            quantityTextBox.Location = new Point(120, 64);
+            quantityTextBox.Margin = new Padding(2, 2, 2, 2);
             quantityTextBox.Name = "quantityTextBox";
-            quantityTextBox.Size = new Size(121, 31);
+            quantityTextBox.Size = new Size(86, 23);
             quantityTextBox.TabIndex = 5;
             quantityTextBox.TextChanged += quantityTextBox_TextChanged;
             // 
             // itemNameTextBox
             // 
-            itemNameTextBox.Location = new Point(171, 49);
+            itemNameTextBox.Location = new Point(120, 29);
+            itemNameTextBox.Margin = new Padding(2, 2, 2, 2);
             itemNameTextBox.Name = "itemNameTextBox";
-            itemNameTextBox.Size = new Size(176, 31);
+            itemNameTextBox.Size = new Size(124, 23);
             itemNameTextBox.TabIndex = 4;
             itemNameTextBox.TextChanged += itemLabel_TextChanged;
             // 
             // addButton
             // 
             addButton.ForeColor = SystemColors.ActiveCaptionText;
-            addButton.Location = new Point(108, 210);
+            addButton.Location = new Point(76, 126);
+            addButton.Margin = new Padding(2, 2, 2, 2);
             addButton.Name = "addButton";
-            addButton.Size = new Size(112, 34);
+            addButton.Size = new Size(78, 20);
             addButton.TabIndex = 3;
             addButton.Text = "ADD";
             addButton.UseVisualStyleBackColor = true;
@@ -164,11 +173,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { item, quantity, totalPrice, delete });
             dataGridView1.GridColor = SystemColors.Menu;
-            dataGridView1.Location = new Point(473, 22);
+            dataGridView1.Location = new Point(331, 13);
+            dataGridView1.Margin = new Padding(2, 2, 2, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 50;
-            dataGridView1.Size = new Size(654, 274);
+            dataGridView1.Size = new Size(458, 164);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -200,12 +210,12 @@
             // 
             // delete
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.Black;
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            delete.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.Black;
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            delete.DefaultCellStyle = dataGridViewCellStyle2;
             delete.FlatStyle = FlatStyle.Popup;
             delete.HeaderText = "DELETE";
             delete.MinimumWidth = 8;
@@ -232,53 +242,59 @@
             calcuPanel.Controls.Add(discountAmountLabel);
             calcuPanel.Controls.Add(discountPercentLabel);
             calcuPanel.Controls.Add(totalCostLabel);
-            calcuPanel.Location = new Point(615, 370);
+            calcuPanel.Location = new Point(430, 222);
+            calcuPanel.Margin = new Padding(2, 2, 2, 2);
             calcuPanel.Name = "calcuPanel";
-            calcuPanel.Size = new Size(389, 233);
+            calcuPanel.Size = new Size(272, 140);
             calcuPanel.TabIndex = 5;
             // 
             // totalAmountTextBox
             // 
-            totalAmountTextBox.Location = new Point(222, 146);
+            totalAmountTextBox.Location = new Point(155, 88);
+            totalAmountTextBox.Margin = new Padding(2, 2, 2, 2);
             totalAmountTextBox.Name = "totalAmountTextBox";
             totalAmountTextBox.ReadOnly = true;
-            totalAmountTextBox.Size = new Size(150, 31);
+            totalAmountTextBox.Size = new Size(106, 23);
             totalAmountTextBox.TabIndex = 15;
             totalAmountTextBox.TextChanged += totalAmountTextBox_TextChanged;
             // 
             // discountAmountTextBox
             // 
-            discountAmountTextBox.Location = new Point(222, 108);
+            discountAmountTextBox.Location = new Point(155, 65);
+            discountAmountTextBox.Margin = new Padding(2, 2, 2, 2);
             discountAmountTextBox.Name = "discountAmountTextBox";
             discountAmountTextBox.ReadOnly = true;
-            discountAmountTextBox.Size = new Size(150, 31);
+            discountAmountTextBox.Size = new Size(106, 23);
             discountAmountTextBox.TabIndex = 14;
             discountAmountTextBox.TextChanged += discountAmountTextBox_TextChanged;
             // 
             // percentDiscountTextBox
             // 
-            percentDiscountTextBox.Location = new Point(222, 71);
+            percentDiscountTextBox.Location = new Point(155, 43);
+            percentDiscountTextBox.Margin = new Padding(2, 2, 2, 2);
             percentDiscountTextBox.Name = "percentDiscountTextBox";
             percentDiscountTextBox.ReadOnly = true;
-            percentDiscountTextBox.Size = new Size(150, 31);
+            percentDiscountTextBox.Size = new Size(106, 23);
             percentDiscountTextBox.TabIndex = 13;
             percentDiscountTextBox.TextChanged += percentDiscountTextBox_TextChanged;
             // 
             // totalCostTextBox
             // 
             totalCostTextBox.BackColor = SystemColors.Control;
-            totalCostTextBox.Location = new Point(222, 34);
+            totalCostTextBox.Location = new Point(155, 20);
+            totalCostTextBox.Margin = new Padding(2, 2, 2, 2);
             totalCostTextBox.Name = "totalCostTextBox";
             totalCostTextBox.ReadOnly = true;
-            totalCostTextBox.Size = new Size(150, 31);
+            totalCostTextBox.Size = new Size(106, 23);
             totalCostTextBox.TabIndex = 12;
             totalCostTextBox.TextChanged += totalCostTextBox_TextChanged;
             // 
             // doneButton
             // 
-            doneButton.Location = new Point(160, 183);
+            doneButton.Location = new Point(112, 110);
+            doneButton.Margin = new Padding(2, 2, 2, 2);
             doneButton.Name = "doneButton";
-            doneButton.Size = new Size(112, 34);
+            doneButton.Size = new Size(78, 20);
             doneButton.TabIndex = 8;
             doneButton.Text = "DONE";
             doneButton.UseVisualStyleBackColor = true;
@@ -288,9 +304,10 @@
             // 
             totalAmount.AutoSize = true;
             totalAmount.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalAmount.Location = new Point(52, 142);
+            totalAmount.Location = new Point(36, 85);
+            totalAmount.Margin = new Padding(2, 0, 2, 0);
             totalAmount.Name = "totalAmount";
-            totalAmount.Size = new Size(154, 25);
+            totalAmount.Size = new Size(99, 15);
             totalAmount.TabIndex = 11;
             totalAmount.Text = "TOTAL AMOUNT";
             // 
@@ -298,9 +315,10 @@
             // 
             discountAmountLabel.AutoSize = true;
             discountAmountLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            discountAmountLabel.Location = new Point(15, 104);
+            discountAmountLabel.Location = new Point(10, 62);
+            discountAmountLabel.Margin = new Padding(2, 0, 2, 0);
             discountAmountLabel.Name = "discountAmountLabel";
-            discountAmountLabel.Size = new Size(191, 25);
+            discountAmountLabel.Size = new Size(124, 15);
             discountAmountLabel.TabIndex = 10;
             discountAmountLabel.Text = "DISCOUNT AMOUNT";
             // 
@@ -308,9 +326,10 @@
             // 
             discountPercentLabel.AutoSize = true;
             discountPercentLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            discountPercentLabel.Location = new Point(18, 69);
+            discountPercentLabel.Location = new Point(13, 41);
+            discountPercentLabel.Margin = new Padding(2, 0, 2, 0);
             discountPercentLabel.Name = "discountPercentLabel";
-            discountPercentLabel.Size = new Size(188, 25);
+            discountPercentLabel.Size = new Size(121, 15);
             discountPercentLabel.TabIndex = 9;
             discountPercentLabel.Text = "PERCENT DISCOUNT";
             discountPercentLabel.Click += discountPercentLabel_Click;
@@ -319,17 +338,19 @@
             // 
             totalCostLabel.AutoSize = true;
             totalCostLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalCostLabel.Location = new Point(88, 34);
+            totalCostLabel.Location = new Point(62, 20);
+            totalCostLabel.Margin = new Padding(2, 0, 2, 0);
             totalCostLabel.Name = "totalCostLabel";
-            totalCostLabel.Size = new Size(118, 25);
+            totalCostLabel.Size = new Size(76, 15);
             totalCostLabel.TabIndex = 8;
             totalCostLabel.Text = "TOTAL COST";
             // 
             // checkOutButton
             // 
-            checkOutButton.Location = new Point(756, 302);
+            checkOutButton.Location = new Point(529, 181);
+            checkOutButton.Margin = new Padding(2, 2, 2, 2);
             checkOutButton.Name = "checkOutButton";
-            checkOutButton.Size = new Size(135, 49);
+            checkOutButton.Size = new Size(94, 29);
             checkOutButton.TabIndex = 6;
             checkOutButton.Text = "CHECK OUT";
             checkOutButton.UseVisualStyleBackColor = true;
@@ -337,33 +358,37 @@
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(455, 601);
+            exitButton.Location = new Point(318, 361);
+            exitButton.Margin = new Padding(2, 2, 2, 2);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(112, 34);
+            exitButton.Size = new Size(78, 20);
             exitButton.TabIndex = 7;
             exitButton.Text = "CLOSE";
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
-            // dateTimePicker1
+            // Date
             // 
-            dateTimePicker1.Location = new Point(81, 158);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(300, 31);
-            dateTimePicker1.TabIndex = 8;
+            Date.Location = new Point(57, 95);
+            Date.Margin = new Padding(2, 2, 2, 2);
+            Date.Name = "Date";
+            Date.Size = new Size(211, 23);
+            Date.TabIndex = 8;
+            Date.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1181, 647);
-            Controls.Add(dateTimePicker1);
+            ClientSize = new Size(827, 388);
+            Controls.Add(Date);
             Controls.Add(exitButton);
             Controls.Add(checkOutButton);
             Controls.Add(calcuPanel);
             Controls.Add(dataGridView1);
             Controls.Add(fillUpPanel);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "TINDAHAN DE ALKANSE";
             Load += Form1_Load;
@@ -405,6 +430,6 @@
         private DataGridViewTextBoxColumn totalPrice;
         private DataGridViewButtonColumn delete;
         private Button exitButton;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker Date;
     }
 }

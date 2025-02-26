@@ -59,5 +59,25 @@ namespace GroceryApp.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3dc9c8646d7a5935b7b6192112c2f72b {
+            get {
+                object obj = ResourceManager.GetObject("3dc9c8646d7a5935b7b6192112c2f72b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_check_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-check-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -1,4 +1,7 @@
-﻿namespace GroceryApp
+﻿using System.Text;
+using System.Windows.Forms;
+
+namespace GroceryApp
 {
     public partial class Form1 : Form
     {
@@ -11,11 +14,16 @@
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+            {
+                return; // Ignore clicks on the header or invalid cells
+            }
+
             // Check if the clicked cell is in the "Delete" button column
-            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
             {
                 // Get the item name for confirmation message
-                string itemName = dataGridView1.Rows[e.RowIndex].Cells[0].Value?.ToString();
+                string? itemName = dataGridView1.Rows[e.RowIndex].Cells[0].Value?.ToString();
 
                 // Confirm deletion
                 DialogResult result = MessageBox.Show($"Are you sure you want to delete '{itemName}'?",
@@ -156,11 +164,11 @@
             double discountAmount = (totalPrice * discountPercentage) / 100;
             double finalPrice = totalPrice - discountAmount;
 
-            // Display values with Peso sign and proper formatting
+            // Display values with Dollar sign and proper formatting
             percentDiscountTextBox.Text = $"{discountPercentage}%";  // Corrected percent formatting
-            totalCostTextBox.Text = $"₱{totalPrice:N2}";
-            discountAmountTextBox.Text = $"₱{discountAmount:N2}";
-            totalAmountTextBox.Text = $"₱{finalPrice:N2}"; // Final price after discount
+            totalCostTextBox.Text = $"${totalPrice:N2}";
+            discountAmountTextBox.Text = $"${discountAmount:N2}";
+            totalAmountTextBox.Text = $"${finalPrice:N2}"; // Final price after discount
         }
 
         private void totalAmountTextBox_TextChanged(object sender, EventArgs e)
@@ -185,11 +193,110 @@
 
         private void doneButton_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            percentDiscountTextBox.Clear();
-            totalAmountTextBox.Clear();
-            discountAmountTextBox.Clear();
-            totalCostTextBox.Clear();
+            // Prevent opening empty receipt if there are no items
+            if (dataGridView1.Rows.Count == 0 || (dataGridView1.Rows.Count == 1 && dataGridView1.Rows[0].IsNewRow))
+            {
+                MessageBox.Show("No items to print. Please add items first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            //Values
+            double totalPrice = calculatePrice();
+            int discountPercentage = calDiscount(); // Store discount value to avoid multiple calls
+            double discountAmount = (totalPrice * discountPercentage) / 100;
+            double finalPrice = totalPrice - discountAmount;
+
+            StringBuilder sbitems = new StringBuilder();
+            StringBuilder sbprice = new StringBuilder();
+            StringBuilder sbqnty = new StringBuilder();
+
+            // Process each row in DataGridView
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                // Skip empty rows
+                if (row.IsNewRow) continue;
+
+                bool hasData = false; // Track if row has valid data
+
+                for (int i = 0; i < row.Cells.Count; i++)
+                {
+                    DataGridViewCell cell = row.Cells[i];
+
+                    if (cell.Value != null && !cell.Value.ToString().Equals("delete", StringComparison.OrdinalIgnoreCase))
+                    {
+                        hasData = true; // Mark that row has valid data
+
+                        if (i == 2)
+                        {
+                            double Price;
+                            if (cell.Value != null && double.TryParse(cell.Value.ToString(), out Price))
+                            {
+                                sbprice.Append($"${Price:N2}" + Environment.NewLine);
+                            }
+                        }
+                        else if (i == 1)
+                        {
+                            sbqnty.Append(cell.Value.ToString() + Environment.NewLine);
+                        }
+                        else
+                        {
+                            sbitems.Append(cell.Value.ToString() + Environment.NewLine);
+                        }
+                    }
+                }
+
+                // Only append new lines if row had data
+                if (hasData)
+                {
+                    sbitems.AppendLine();
+                    sbqnty.AppendLine();
+                    sbprice.AppendLine();
+                }
+            }
+
+            // Convert to string
+            string items = sbitems.ToString().Trim();  //Gets Items
+            string quantity = sbqnty.ToString().Trim();
+            string price = sbprice.ToString().Trim();
+            string date = Date.Value.ToString();//Gets date
+            string values = $"{totalPrice:N2}\n" + 
+                $"{discountPercentage}%\n" +  //Gets totals
+                $"${discountAmount:N2}\n" +  
+                $"${finalPrice:N2}";
+            try
+            {
+                this.Hide();
+
+                ReceiptForm receipt = new ReceiptForm(items, quantity, price, values, date);
+
+                if (!string.IsNullOrEmpty(items))
+                {
+                    if (receipt != null)
+                    {
+                        dataGridView1.Rows.Clear();
+                        percentDiscountTextBox.Clear();
+                        totalAmountTextBox.Clear();
+                        discountAmountTextBox.Clear();
+                        totalCostTextBox.Clear();
+                        receipt.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No valid items to print.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No valid items to print.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                this.Show();
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -198,6 +305,11 @@
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
