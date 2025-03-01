@@ -77,7 +77,7 @@
             receiptpanel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             receiptpanel.Location = new Point(0, -1);
             receiptpanel.Name = "receiptpanel";
-            receiptpanel.Size = new Size(425, 426);
+            receiptpanel.Size = new Size(425, 465);
             receiptpanel.TabIndex = 0;
             receiptpanel.Paint += receiptpanel_Paint;
             // 
@@ -85,7 +85,7 @@
             // 
             separator2.AutoSize = true;
             separator2.Dock = DockStyle.Bottom;
-            separator2.Location = new Point(0, 325);
+            separator2.Location = new Point(0, 364);
             separator2.Name = "separator2";
             separator2.Size = new Size(62, 15);
             separator2.TabIndex = 26;
@@ -99,7 +99,7 @@
             valuesPanel.Controls.Add(label7);
             valuesPanel.Controls.Add(labelValues);
             valuesPanel.Dock = DockStyle.Bottom;
-            valuesPanel.Location = new Point(0, 340);
+            valuesPanel.Location = new Point(0, 379);
             valuesPanel.Name = "valuesPanel";
             valuesPanel.Size = new Size(425, 61);
             valuesPanel.TabIndex = 25;
@@ -108,7 +108,7 @@
             // 
             labeldate.AutoSize = true;
             labeldate.ForeColor = SystemColors.WindowFrame;
-            labeldate.Location = new Point(169, 0);
+            labeldate.Location = new Point(165, 0);
             labeldate.Name = "labeldate";
             labeldate.Size = new Size(30, 15);
             labeldate.TabIndex = 3;
@@ -153,7 +153,7 @@
             btmpanel.AutoSize = true;
             btmpanel.Controls.Add(LabelFinalamnt);
             btmpanel.Dock = DockStyle.Bottom;
-            btmpanel.Location = new Point(0, 401);
+            btmpanel.Location = new Point(0, 440);
             btmpanel.Name = "btmpanel";
             btmpanel.Size = new Size(425, 25);
             btmpanel.TabIndex = 24;
@@ -188,7 +188,7 @@
             // 
             panel1.AutoSize = true;
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 426);
+            panel1.Location = new Point(0, 465);
             panel1.Name = "panel1";
             panel1.Size = new Size(425, 0);
             panel1.TabIndex = 17;
@@ -295,8 +295,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.DarkSlateGray;
-            ClientSize = new Size(425, 425);
+            ClientSize = new Size(425, 464);
             Controls.Add(receiptpanel);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "ReceiptForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RECEIPT DE ALKANSE";

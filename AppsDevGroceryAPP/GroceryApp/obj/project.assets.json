@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\basal\\Source\\Repos\\AppsDevGroceryAPP\\GroceryApp\\GroceryApp.csproj",
+      "projectUniqueName": "C:\\Users\\basal\\source\\repos\\nky02\\APPSDEV22\\AppsDevGroceryAPP\\GroceryApp\\GroceryApp.csproj",
       "projectName": "GroceryApp",
-      "projectPath": "C:\\Users\\basal\\Source\\Repos\\AppsDevGroceryAPP\\GroceryApp\\GroceryApp.csproj",
+      "projectPath": "C:\\Users\\basal\\source\\repos\\nky02\\APPSDEV22\\AppsDevGroceryAPP\\GroceryApp\\GroceryApp.csproj",
       "packagesPath": "C:\\Users\\basal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\basal\\Source\\Repos\\AppsDevGroceryAPP\\GroceryApp\\obj\\",
+      "outputPath": "C:\\Users\\basal\\source\\repos\\nky02\\APPSDEV22\\AppsDevGroceryAPP\\GroceryApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
