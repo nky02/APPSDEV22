@@ -76,8 +76,9 @@
             receiptpanel.Controls.Add(check_icn);
             receiptpanel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             receiptpanel.Location = new Point(0, -1);
+            receiptpanel.Margin = new Padding(0);
             receiptpanel.Name = "receiptpanel";
-            receiptpanel.Size = new Size(425, 465);
+            receiptpanel.Size = new Size(421, 617);
             receiptpanel.TabIndex = 0;
             receiptpanel.Paint += receiptpanel_Paint;
             // 
@@ -85,7 +86,7 @@
             // 
             separator2.AutoSize = true;
             separator2.Dock = DockStyle.Bottom;
-            separator2.Location = new Point(0, 364);
+            separator2.Location = new Point(0, 501);
             separator2.Name = "separator2";
             separator2.Size = new Size(62, 15);
             separator2.TabIndex = 26;
@@ -99,9 +100,9 @@
             valuesPanel.Controls.Add(label7);
             valuesPanel.Controls.Add(labelValues);
             valuesPanel.Dock = DockStyle.Bottom;
-            valuesPanel.Location = new Point(0, 379);
+            valuesPanel.Location = new Point(0, 516);
             valuesPanel.Name = "valuesPanel";
-            valuesPanel.Size = new Size(425, 61);
+            valuesPanel.Size = new Size(421, 61);
             valuesPanel.TabIndex = 25;
             // 
             // labeldate
@@ -153,9 +154,9 @@
             btmpanel.AutoSize = true;
             btmpanel.Controls.Add(LabelFinalamnt);
             btmpanel.Dock = DockStyle.Bottom;
-            btmpanel.Location = new Point(0, 440);
+            btmpanel.Location = new Point(0, 577);
             btmpanel.Name = "btmpanel";
-            btmpanel.Size = new Size(425, 25);
+            btmpanel.Size = new Size(421, 40);
             btmpanel.TabIndex = 24;
             btmpanel.Paint += btmpanel_Paint;
             // 
@@ -166,7 +167,8 @@
             LabelFinalamnt.ForeColor = Color.DarkSlateGray;
             LabelFinalamnt.Location = new Point(179, 4);
             LabelFinalamnt.Name = "LabelFinalamnt";
-            LabelFinalamnt.Size = new Size(68, 21);
+            LabelFinalamnt.Padding = new Padding(0, 0, 0, 15);
+            LabelFinalamnt.Size = new Size(68, 36);
             LabelFinalamnt.TabIndex = 19;
             LabelFinalamnt.Text = "label10";
             // 
@@ -188,9 +190,9 @@
             // 
             panel1.AutoSize = true;
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 465);
+            panel1.Location = new Point(0, 617);
             panel1.Name = "panel1";
-            panel1.Size = new Size(425, 0);
+            panel1.Size = new Size(421, 0);
             panel1.TabIndex = 17;
             // 
             // separator1
@@ -294,8 +296,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.DarkSlateGray;
-            ClientSize = new Size(425, 464);
+            ClientSize = new Size(421, 616);
+            ControlBox = false;
             Controls.Add(receiptpanel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;

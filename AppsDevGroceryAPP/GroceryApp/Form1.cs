@@ -36,11 +36,11 @@ namespace GroceryApp
         }
         private void AddItemToGrid()
         {
-            string item = itemNameTextBox.Text;
+            string item = itemNameTextBox.Text.Trim();
             int quantity;
             double pricePerUnit;
 
-            if (int.TryParse(item, out _))
+            if (int.TryParse(item, out _)|| item == "")
             {
                 MessageBox.Show("Please enter a valid item name.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

@@ -31,13 +31,31 @@ namespace GroceryApp
             separator2.Text = separator;
         }
 
+        private const int FixedHeight = 655; 
         private void Form3_Load(object sender, EventArgs e)
         {
+
             logo.Left = (this.ClientSize.Width - logo.Width) / 2;
 
+           
+            this.AutoScroll = true;
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 0); 
+            
+            
+            this.Height = FixedHeight;
+
+            
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+
+            
+            this.Resize += Form1_Resize;
         }
 
-
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            this.Height = FixedHeight; // Lock the Y-axis
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 0); // Ensure no horizontal scroll
+        }
 
         private void totalCostLabel_Click(object sender, EventArgs e) { }
 
