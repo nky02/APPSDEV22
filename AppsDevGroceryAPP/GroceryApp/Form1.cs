@@ -268,7 +268,7 @@ namespace GroceryApp
                         totalAmountTextBox.Clear();
                         discountAmountTextBox.Clear();
                         totalCostTextBox.Clear();
-                        receipt.ShowDialog();
+                        receipt.Show();
                     }
                     else
                     {
@@ -284,20 +284,21 @@ namespace GroceryApp
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally
-            {
-                this.Show();
-            }
+            
         }
 
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.ExitThread();
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+
 
         }
     }

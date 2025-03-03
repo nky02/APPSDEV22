@@ -37,6 +37,7 @@
             label7 = new Label();
             labelValues = new Label();
             btmpanel = new Panel();
+            closereceipt = new Button();
             LabelFinalamnt = new Label();
             logo = new PictureBox();
             panel1 = new Panel();
@@ -86,7 +87,7 @@
             // 
             separator2.AutoSize = true;
             separator2.Dock = DockStyle.Bottom;
-            separator2.Location = new Point(0, 501);
+            separator2.Location = new Point(0, 483);
             separator2.Name = "separator2";
             separator2.Size = new Size(62, 15);
             separator2.TabIndex = 26;
@@ -100,7 +101,7 @@
             valuesPanel.Controls.Add(label7);
             valuesPanel.Controls.Add(labelValues);
             valuesPanel.Dock = DockStyle.Bottom;
-            valuesPanel.Location = new Point(0, 516);
+            valuesPanel.Location = new Point(0, 498);
             valuesPanel.Name = "valuesPanel";
             valuesPanel.Size = new Size(421, 61);
             valuesPanel.TabIndex = 25;
@@ -152,20 +153,32 @@
             // btmpanel
             // 
             btmpanel.AutoSize = true;
+            btmpanel.Controls.Add(closereceipt);
             btmpanel.Controls.Add(LabelFinalamnt);
             btmpanel.Dock = DockStyle.Bottom;
-            btmpanel.Location = new Point(0, 577);
+            btmpanel.Location = new Point(0, 559);
             btmpanel.Name = "btmpanel";
-            btmpanel.Size = new Size(421, 40);
+            btmpanel.Size = new Size(421, 58);
             btmpanel.TabIndex = 24;
             btmpanel.Paint += btmpanel_Paint;
+            // 
+            // closereceipt
+            // 
+            closereceipt.BackColor = Color.Transparent;
+            closereceipt.Location = new Point(167, 32);
+            closereceipt.Name = "closereceipt";
+            closereceipt.Size = new Size(75, 23);
+            closereceipt.TabIndex = 20;
+            closereceipt.Text = "Close";
+            closereceipt.UseVisualStyleBackColor = false;
+            closereceipt.Click += closereceipt_Click;
             // 
             // LabelFinalamnt
             // 
             LabelFinalamnt.AutoSize = true;
             LabelFinalamnt.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LabelFinalamnt.ForeColor = Color.DarkSlateGray;
-            LabelFinalamnt.Location = new Point(179, 4);
+            LabelFinalamnt.Location = new Point(174, 4);
             LabelFinalamnt.Name = "LabelFinalamnt";
             LabelFinalamnt.Padding = new Padding(0, 0, 0, 15);
             LabelFinalamnt.Size = new Size(68, 36);
@@ -302,6 +315,7 @@
             ClientSize = new Size(421, 616);
             ControlBox = false;
             Controls.Add(receiptpanel);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -343,5 +357,6 @@
         private Label label7;
         private Label labelValues;
         private Panel btmpanel;
+        private Button closereceipt;
     }
 }

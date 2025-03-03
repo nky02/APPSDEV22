@@ -40,7 +40,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(142, 37);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(284, 224);
             pictureBox1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // taraButton
             // 
             taraButton.Location = new Point(237, 296);
-            taraButton.Margin = new Padding(2, 2, 2, 2);
+            taraButton.Margin = new Padding(2);
             taraButton.Name = "taraButton";
             taraButton.Size = new Size(107, 37);
             taraButton.TabIndex = 1;
@@ -79,10 +79,11 @@
             Controls.Add(label1);
             Controls.Add(taraButton);
             Controls.Add(pictureBox1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "TINDAHAN DE ALKANSE";
+            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

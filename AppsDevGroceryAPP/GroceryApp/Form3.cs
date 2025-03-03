@@ -31,23 +31,23 @@ namespace GroceryApp
             separator2.Text = separator;
         }
 
-        private const int FixedHeight = 655; 
+        private const int FixedHeight = 655;
         private void Form3_Load(object sender, EventArgs e)
         {
 
             logo.Left = (this.ClientSize.Width - logo.Width) / 2;
 
-           
+
             this.AutoScroll = true;
-            this.AutoScrollMinSize = new System.Drawing.Size(0, 0); 
-            
-            
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+
+
             this.Height = FixedHeight;
 
-            
+
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
-            
+
             this.Resize += Form1_Resize;
         }
 
@@ -130,6 +130,13 @@ namespace GroceryApp
         {
             LabelFinalamnt.Left = (btmpanel.Width - LabelFinalamnt.Width) / 2;
             LabelFinalamnt.Top = (btmpanel.Height - LabelFinalamnt.Height) / 2;
+        }
+
+        private void closereceipt_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.Show();
         }
     }
 }
