@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroceryApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c11576bc28bea1b7bb3b0206828574a74a8c15b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50168d93ae5340b3856d37d37f66c50a16284cbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroceryApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroceryApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

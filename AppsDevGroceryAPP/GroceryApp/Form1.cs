@@ -40,7 +40,7 @@ namespace GroceryApp
             int quantity;
             double pricePerUnit;
 
-            if (int.TryParse(item, out _)|| item == "")
+            if (int.TryParse(item, out _) || item == "")
             {
                 MessageBox.Show("Please enter a valid item name.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -284,7 +284,7 @@ namespace GroceryApp
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
 
@@ -297,8 +297,18 @@ namespace GroceryApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
 
+
+
+        }
+
+        private void fillUpPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void totalCostLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }
